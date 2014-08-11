@@ -1,0 +1,130 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+/* Your app's CSS, go crazy, make it your own */
+
+.firstCard{
+	padding-top: 5%;
+}
+
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+.pane {
+  background-color: #222 !important
+}
+
+.bar.bar-transparent {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+
+.bar .title {
+  color: #eee;
+}
+
+.swipe-cards {
+  position: fixed;
+}
+
+.swipe-card {
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  display: none;
+  position: fixed;
+  -webkit-transform: scale(1,1);
+  left: 50%;
+  top: 40%;
+  width: 300px;
+  height: 450px;
+  margin-left: -150px;
+  margin-top: -150px;
+  box-sizing: border-box;
+  background-color: #30BD8A;
+  border: 6px groove #39d9b5;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.bar-calm{
+  color: #d96539 !important;
+  background: #30BD8A !important; 
+}
+
+.swipe-card .title {
+  height: 80px;
+  padding: 5px;
+  padding-top: 20px;
+  font-size: 2.2em;
+  color: #d96539;
+  text-transform: uppercase;
+  line-height: 25px;
+  background: #d9b539;
+  border-bottom: 6px solid #39d9b5;
+  position: relative;
+  z-index: -1;
+}
+.swipe-card .image {
+padding-top: 40%;
+color: #eef;/*
+	background-color: #30BD8A;*/
+  padding: 5px;
+  overflow: hidden;
+  max-height: 350px;
+}
+.swipe-card .button {
+
+    border: 0px;
+}
+.swipe-card .image img {
+
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+}
+
+#start-card {
+  color: #eff;
+  background-color: #30BD8A;
+  line-height: 300px;
+  word-wrap: break-word;
+  border: 6px solid #39d9b5;
+  text-align: center;
+}
+#start-card span {
+  display: inline-block;
+  line-height: 40px;
+  width: 200px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+#footer .button {
+
+  color: #000;
+}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    -webkit-transform: scale(0,0);
+  }
+  70% {
+    -webkit-transform: scale(1.2,1.2);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+  }
+}
+
+.swipe-card.pop-in-start {
+  -webkit-transform: scale(0,0);
+}
+.swipe-card.pop-in {
+  -webkit-animation: bounceIn 0.3s ease-out;
+}
